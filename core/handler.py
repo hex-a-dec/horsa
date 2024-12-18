@@ -56,6 +56,12 @@ class Handler:
             elif self.lang == "aspx":
                 if self.cmd == ":shell":
                     self.selected_command = self.args
+                elif self.cmd == ":username":
+                    self.selected_command = self.args
+                elif self.cmd == ":pwd":
+                    self.selected_command = self.args
+                elif self.cmd == ":hostrname":
+                    self.selected_command = self.args
                 elif self.cmd == ":upload":
                     data = Request.encode_base64(self.write_from_file(self.args.split()[0]))
                     self.selected_command = self.cmd + " " + self.args.split()[1] + " " + data
