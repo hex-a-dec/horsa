@@ -42,7 +42,7 @@
 ==============================================--=-=----------------:::::::::::::::::::::::::-:-:-=--
 ```
 ![Python](https://img.shields.io/badge/python-3.11-blue.svg)
-![Version](https://img.shields.io/badge/release-1.0-yellow.svg)
+![Version](https://img.shields.io/badge/release-N/A-yellow.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 The Airspeed Horsa was a British military glider used during World War II. It was designed by the British manufacturer Airspeed Limited in response to a requirement from the British military for a large transport glider that could carry troops in support of airborne operations.
