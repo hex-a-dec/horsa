@@ -45,18 +45,18 @@
 ![Version](https://img.shields.io/badge/release-1.0-yellow.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-The Airspeed Horsa was a British military glider used during World War II. It was designed by the British manufacturer Airspeed Limited in response to a requirement from the British military for a large transport glider that could carry troops in support of airborne operations
+The Airspeed Horsa was a British military glider used during World War II. It was designed by the British manufacturer Airspeed Limited in response to a requirement from the British military for a large transport glider that could carry troops in support of airborne operations.
 
 Despite being a large and cumbersome aircraft, was well-liked by the troops who used it, especially during the Normandy landings in June 1944, where it played a crucial role.
 
 ## [+] Overview
 
-Horsa is a **webshell framework and command-control (C2)** made in #Python. The project is built around two core functionalities. Alternatively, the Python's wrapper can generate webshells in #ASP.NET or #PHP on fly or interact with agents deployed on target.
+Horsa is a **webshell framework and command-control (C2)** made in Python. The project is built around two core functions. Alternatively, the Python's wrapper can generate webshells in ASP.NET or PHP on fly or interact with agents deployed on targets.
 
-The content of the HTTP(S) communications between the wraper and a deployed webshell are #XOR encrypted and base64-encoded. 
+The content of the HTTP(S) communications between the wraper and a deployed webshell is #XOR encrypted and base64-encoded. 
 
 >[!WARNING]
->Note the user-agent (UA) and the XOR key can be configured through a custom command-line interface (CLI). 
+>Note the user-agent (UA) and the XOR key can be configured through the custom command-line interface (CLI). 
 
 The Horsa webshell's have **working but limited capabilities**, such as:
 - **command execution** through dangerous native functions (PHP) or cmd.exe built-in binary (ASPX)
@@ -68,15 +68,15 @@ The PHP template used to generate new agent is **lightly obfuscated**. The ASP.N
 The whole project is **object oriented** and structured as follow:
 - `main.py`: Python's wrapper entry point
 - `core/session.py`: this class is related to the core functionalities of Horsa (generate, interact)
-- `core/handler.py`: the handler class builds command understandable for Horsa's agents
+- `core/handler.py`: the handler class builds commands that can be interpreted by Horsa's agents
 - `core/request.py`: this class handles the communication between the wrapper and the agents
-- `core/config.py`: parameters configurable to customize the project
+- `core/config.py`: contains parameters configurable to customize the project
 - `output/`: generated webshells are written here
 - `implant/`: webshell templates can be found here (ASP.NET and PHP)
 
 ## [+] Recommended setup
 
-After`git clone` the project, you should a create a clean Python's virtual environment and install the requirements using #pip tool:
+After`git clone` the project, you should a create a clean Python's virtual environment and install the requirements using `pip` tool:
 ```bash
 cd horsa
 python -m virtualenv horsa-venv
@@ -85,7 +85,7 @@ pip3 install -r requirements
 ```
 ## [+] Usage
 
-The Python wrapper is user-friendly. To generate an ASP.NET or PHP webshell, use the following command:
+The Python wrapper is user-friendly. To generate an ASP.NET or a PHP webshell, use the following command:
 
 ```shell
 # proxychains -q rlwrap python3 main.py --generate --key mypassword --lang aspx --url http://10.0.4.195/test.aspx
@@ -139,4 +139,4 @@ iis apppool\defaultapppool
 ## [+] Credits
 A special thanks goes to :
 - **[weevely3](https://github.com/epinna/weevely3)** is the mother-of-all the webshell framework projects. You know what I mean, and if you not, just try this piece of masterwork.
-- **[SharPyShell](https://github.com/antonioCoco/SharPyShell)** was vital to better understans how to use ASP.NET to get a working .aspx agent. His projet is far more achieved than I could ever imagined regarding Horsa. Kudo to @antonioCoco
+- **[SharPyShell](https://github.com/antonioCoco/SharPyShell)** was vital to better understand how to use ASP.NET to get a working .aspx agent. His project is far more achieved than I could ever imagined regarding Horsa. Kudo to @antonioCoco
