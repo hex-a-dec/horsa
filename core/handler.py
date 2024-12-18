@@ -60,7 +60,7 @@ class Handler:
                     self.selected_command = self.args
                 elif self.cmd == ":pwd":
                     self.selected_command = self.args
-                elif self.cmd == ":hostrname":
+                elif self.cmd == ":hostname":
                     self.selected_command = self.args
                 elif self.cmd == ":upload":
                     data = Request.encode_base64(self.write_from_file(self.args.split()[0]))
