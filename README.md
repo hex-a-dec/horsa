@@ -41,6 +41,9 @@
 =::-------------:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-:--:--
 ==============================================--=-=----------------:::::::::::::::::::::::::-:-:-=--
 ```
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+![Version](https://img.shields.io/badge/release-1.0-yellow.svg)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 The Airspeed Horsa was a British military glider used during World War II. It was designed by the British manufacturer Airspeed Limited in response to a requirement from the British military for a large transport glider that could carry troops in support of airborne operations
 
@@ -52,8 +55,8 @@ Horsa is a **webshell framework and command-control (C2)** made in #Python. The 
 
 The content of the HTTP(S) communications between the wraper and a deployed webshell are #XOR encrypted and base64-encoded. 
 
->[!TIPS]
-> Note the user-agent (UA) and the XOR key can be configured through a custom command-line interface (CLI). 
+>[!WARNING]
+>Note the user-agent (UA) and the XOR key can be configured through a custom command-line interface (CLI). 
 
 The Horsa webshell's have **working but limited capabilities**, such as:
 - **command execution** through dangerous native functions (PHP) or cmd.exe built-in binary (ASPX)
